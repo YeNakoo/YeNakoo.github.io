@@ -116,9 +116,9 @@
         font-size: 20px;
         top: 930px;
         height: 100vh;
+        position: relative;
         width: 100%;
         font-family: 'Montserrat', sans-serif;
-        position: relative;
         padding-bottom: 1px;
         color: #000;
         display: block;
@@ -136,66 +136,34 @@
     .about-card {
         width: 50%;
         padding: 5px;
+        height: 300px;
         background-color: #fff;
         margin-left: 25%;
         box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
         align-items: center;
         justify-content: center;
         border-radius: .8rem;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius:0px ;
         display: flex;
     }
 
-    .about-card-img {
-        transform: translateX(-5rem);
-        position: relative;
-        height: 20rem;
-        min-width: 13rem;
-        max-width: 14rem;
-
+    .about-img {
+        width: 339px;
+        height: auto;
+        float: left;
+        border-top-left-radius: .8rem;
+        border-bottom-left-radius: .8rem;
+        margin-left: 18%;
+        z-index: 2;
     }
 
-    .about-card-img img {
-        width: 120%;
-        margin-top: 0;
-        display: inline-block;
-        object-fit: cover;
-        margin-top: 50px;
-        border-radius: 10px;
+    .about-card p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: 1px solid;
     }
-
-    .about-title {
-        padding-bottom: 0px;
-        color: #FFA500;
-        padding: 0;
-        margin: 1.5rem 0 2rem;
-        font-size: 2.5rem;
-        display: inline-block;
-        margin-right: 100%;
-
-    }
-
-    .about-text {
-        text-align: justify;
-        display: inline-block;
-        margin-right: 20px;
-        font-size: 20px;
-    }
-
-    .about-button {
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 8px;
-        background-color: #FFA500;
-        color: #fff;
-        display: inline-block;
-        margin-top: 25px;
-        margin-right: 83%;
-    }
-
-    .about-button:hover {
-        background-color: #e6990b;
-    }
-
+    
     /* Mobile Menu*/
 
     .menu-toggle {
@@ -259,9 +227,39 @@
 
     /* Responsive */
 
-    @media  screen and (max-width:1222px) {
-        .about-text {
-            text-align: left;
+    @media  screen and (max-width:1287px) {
+        .about-img {
+            margin-left: 10%;
+        }
+    }
+
+    @media  screen and (max-width:1024px) {
+        .about-img {
+            margin-left: 8%;
+        }
+    }
+
+    @media  screen and (max-width:897px) {
+        .about-img {
+            margin-left: 6%;
+        }
+    }
+
+    @media  screen and (max-width:823px) {
+        .about-img {
+            margin-left: 3%;
+        }
+    }
+
+    @media  screen and (max-width:740px) {
+        .about-img {
+            float: none;
+            border-bottom-right-radius: .8rem;
+            border-top-left-radius: 0px;
+        }
+        .about-card {
+            border-top-left-radius: .8rem;
+            border-bottom-left-radius: 0px;
         }
     }
 
