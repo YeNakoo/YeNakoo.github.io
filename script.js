@@ -7,6 +7,10 @@ menuToggle.addEventListener('click', function () {
     nav.classList.toggle('slide')
 });
 
+nav.addEventListener('click', function () {
+  nav.classList.remove('slide')
+  menuToggle.checked = false
+});
 
 window.onscroll = function() {myFunction()};
 
