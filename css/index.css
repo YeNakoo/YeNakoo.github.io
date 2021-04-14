@@ -129,7 +129,7 @@
 
     .abouttxt h1 {
         padding-top: 80px;
-        padding-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     /* About Card*/
@@ -248,12 +248,12 @@
 
     .product-info span {
         display: block;
-        width: 4px;
-        height: 40px;
+        width: 150px;
+        height: 3px;
         background-color: #FFA500;
         border-radius: 5px;    
-        position: absolute;
-        
+        position: relative;
+        margin-bottom: 10px;
     }
 
     /* Mobile Menu*/
@@ -342,6 +342,12 @@
         .product-card {
             width: 28%;
         }
+        .banner h1 {
+            font-size: 90px;
+            line-height: 80px;
+            margin-top: 42%;
+            margin-left: 10%;
+        }
     }
 
     @media screen and (max-width: 690px) {
@@ -366,7 +372,6 @@
         .banner h1 {
             font-size: 90px;
             line-height: 80px;
-            color:#fff;
             margin-top: 42%;
             margin-left: 10%;
         }
